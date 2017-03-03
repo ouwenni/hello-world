@@ -1,0 +1,46 @@
+/*reset*/
+
+
+/*example*/
+.example{}
+.example ol{position:relative;width: 80px;height: 20px;top:-30px;left:60px;}
+.example ol li{float:left;width: 10px;height: 10px;margin: 5px;background: #fff;}
+.example ol li.seleted{background: #1AA4CA;}
+
+.example1{}
+.example1 ol{position:relative;width: 80px;height: 20px;top:-30px;left:60px;}
+.example1 ol li{float:left;width: 10px;height: 10px;margin: 5px;background: #fff;}
+.example1 ol li.seleted{background: #1AA4CA;}
+
+.example2{margin:auto; top:20px;}
+/*
+.example2 ol{position:relative;width: 80px;height: 20px;top:-30px;left:60px; list-style:none;}
+.example2 ol li{float:left;width: 10px;height: 10px;margin: 5px;background: #fff;}
+.example2 ol li.seleted{background: #1AA4CA;}
+*/
+.example2 ol{position:relative;width: 300px;height: 20px;top:-30px;left:60px; list-style:none;}
+.example2 ol li{float:left;width: 30px;height: 5px;margin: 5px;border-radius: 10px;border: 1px solid white;}
+.example2 ol li.seleted{}
+.example2 ol li div.seleted{position:relative;overflow:hidden;left:-1px;width: 30px;height:4px;background:#fff;-webkit-animation:aaa 2s linear;border-radius: 10px;}
+.loading{
+            width: 50px;
+            height: 15px;
+            border-radius: 10px;
+            border: 1px solid black;
+
+}
+@-webkit-keyframes aaa{
+            0%{ width: 0px; }
+            30%{width:9px; }
+            60%{width:18px;}
+            100%{width:30px; }
+}
+.progress{
+            width:0%;
+            height: 100%;
+          
+            background: -webkit-gradient(linear, 0 0, 0 100%, from(#7BC3FF), color-stop(0.5,blue), to(#7BC3FF));
+            border-radius: 10px;
+           
+            -webkit-animation:aaa 2s linear;
+}

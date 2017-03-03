@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>禾贝（北京）投资基金管理有限责任公司</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Slicebox - 3D Image Slider with Fallback" />
+        <meta name="keywords" content="jquery, css3, 3d, webkit, fallback, slider, css3, 3d transforms, slices, rotate, box, automatic" />
+		<meta name="author" content="Pedro Botelho for Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<link rel="stylesheet" href="css/style.css"/>
+
+    <!--Luara样式文件-->
+    <!--渐隐样式-->
+    <link rel="stylesheet" href="css/luara.css"/>
+    <!--左滑样式-->
+    <link rel="stylesheet" href="css/luara.left.css"/>
+    <!--上滑样式-->
+    <link rel="stylesheet" href="css/luara.top.css"/>
+	<script src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.luara.0.0.1.min.js"></script>
+		<script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		
+	</head>
+	<body>
+		<div class="container">
+
+			
+
+<!--			<h1><img src="images/logo2.png" width="60" height="45" style="margin-right : 20px"></image>禾贝（北京）投资基金管理有限公司 <span>欢迎您的光临！</span></h1> -->
+			
+		<div class="top1">
+			<div id="logo" align="center">
+				<img src="images/logo3.png" style="max-height:48px">
+			</div>
+			<div id="menu" align="center">
+				<ul id="main" align="center">
+				<li><a href="index.html">主页</a></li>
+				<li>关于禾贝
+					<ul class="drop">
+						<div>
+							<li><a href="gsjj.html">公司简介</a></li>
+							<li><a href="hxjz.html">核心价值</a></li>
+							<li><a href="gsys.html">公司优势</a></li>
+						</div>
+					</ul>
+				</li>
+				<li>基金产品
+					<ul class="drop">
+						<div>
+							<li><a href="jj1.html">X1基金</a></li>
+							<li><a href="jj2.html">X2基金</a></li>
+						</div>
+					</ul>
+				</li>
+				<li>理财规划
+					<ul class="drop">
+						<div>
+							<li><a href="fxph.html">风险偏好分析</a></li>
+							<li><a href="tzjy.html">投资建议</a></li>
+						</div>
+					</ul>
+				</li>
+				<li>客户服务
+				</li>
+				<li>诚聘精英
+					<ul class="drop">
+						<div>
+							<li><a href="cpzw.html">诚聘职位</a></li>
+							<li><a href="zyfz.html">职业发展</a></li>
+						</div>
+					</ul>
+				</li>
+			<div id="marker"></div>
+			</ul>
+			</div>   
+		
+		
+		</div>
+<!--			
+		<div align="center">
+			<ul id="main" align="center">
+				<li>主页</li>
+				<li>关于禾贝
+					<ul class="drop">
+						<div>
+							<li><a href="#">公司简介</a></li>
+							<li><a href="#">核心价值</a></li>
+							<li><a href="#">公司优势</a></li>
+						</div>
+					</ul>
+				</li>
+				<li>基金产品
+					<ul class="drop">
+						<div>
+							<li><a href="#">X1基金</a></li>
+							<li><a href="#">X2基金</a></li>
+						</div>
+					</ul>
+				</li>
+				<li>理财规划
+					<ul class="drop">
+						<div>
+							<li><a href="#">客户风险偏好分析</a></li>
+							<li><a href="#">投资建议</a></li>
+						</div>
+					</ul>
+				</li>
+				<li>客户服务
+				</li>
+				<li>诚聘精英
+					<ul class="drop">
+						<div>
+							<li><a href="#">诚聘职位</a></li>
+							<li><a href="#">职业发展</a></li>
+						</div>
+					</ul>
+				</li>
+			<div id="marker"></div>
+			</ul>
+		</div>   
+-->			
+			<div class="more" style="display:none">
+				
+				<ul id="sb-examples">
+					<li class="selected"><a href="index.html">首页</a></li>
+					<li><a href="#" id="gyhb">关于禾贝</a>
+						
+					</li>
+					<li><a href="#">基金产品</a></li>
+					<li><a href="#">理财规划</a></li>
+					<li><a href="#">客户服务</a></li>
+					<li><a href="#">诚聘精英</a></li>
+					<img src="images/2d.png" width="30" height="30">
+				</ul>
+			
+			</div>
+			
+		
+			
+			<div id="all" style="background:black; filter: alpha(opacity=70); opacity:0.7; position:absolute;top:0px;left:0px; width:100%; height:100%;z-index:10001">
+			
+			</div>
+			<div id="qr_dialog" style="position:fixed;top:10%;left:30%;width:40%;height:70%;z-index:10001;background-color:#ffffff;opacity:1;filter: alpha(opacity=100);z-index:10002">
+				<div style="margin:5%;display:inline-box">
+				<span style="margin-right:8px"><img src="images/logo2.png" width="23" height="23" style="vertical-align:middle;"></span> 
+				<span style="font-size:18px; color:#f90;vertical-align:middle;margin-right:25px">禾贝（北京）投资基金管理有限公司</span>
+				<span style="font-size:18px;vertical-align:middle;float:right">合格投资者认定</span>
+				</div>
+				<p style="font-size:18px; margin-top:18px;margin:5%">根据《私募投资基金募集行为管理办法》第四章第十四条规定：“私募基金管理人、私募基金销售机构不得向合格投资者之外的单位和个人募集资金，不得通过报刊、电台、电视、互联网等公众传播媒体或者讲座、报告会、分析会和布告、传单、手机短信、微信、博客和电子邮件等方式，向不特定对象宣传推介。”</p>
+				<p style="font-size:18px; color:#f90;margin:5%"> 禾贝谨遵基金业协会《私募投资基金募集行为管理办法》之规定，只向特定的合格投资者宣传推介相关私募投资基金产品。</p>
+				<p style="font-size:18px; margin-top:18px;margin:5%">阁下如有意进行私募投资基金投资且满足《私募投资基金监督管理暂行办法》关于“合规投资者”标准之规定，即具备相应风险识别能力和风险承担能力，投资于单只私募基金的金额不低于100 万元，且个人金融类资产不低于300万元或者最近三年个人年均收入不低于50万元人民币。 </p>
+				<p style="font-size:18px; color:#f90;margin-top:18px;margin:5%">请阁下详细阅读本提示，并注册成为禾贝特定的合规投资者，方可获得禾贝私募投资基金产品宣传推介服务。</p>
+				<button style="font-size:18px;border-radius: 3px;background-color: #f90; color: #ffffff;text-align:center;margin:40px 35%;width:30%;" onclick="btnclick()">我知道了</button>
+			</div>
+			
+			
+			
+			<div class="w1">
+			
+				<div class="example2" style="display:none">
+					<ul>
+						<li><img src="images/1.jpg" alt="1"/></li>
+						<li><img src="images/2.jpg" alt="2"/></li>
+						<li><img src="images/3.jpg" alt="3"/></li>
+						<li><img src="images/4.jpg" alt="4"/></li>
+					</ul>
+					<ol>
+						<li><div></div></li>
+						<li><div></div></li>
+						<li><div></div></li>
+						<li><div></div></li>
+					</ol>
+				</div>
+
+			<div class="wrapper" >
+			
+			
+				<div id="shadow" class="shadow"></div>
+
+				<div id="nav-arrows" class="nav-arrows">
+					<a href="#">Next</a>
+					<a href="#">Previous</a>
+				</div>
+
+				<div id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				
+			
+
+			</div><!-- /wrapper -->
+			
+			</div>
+			
+			
+			<p align="center" class ="other">
+				<a href="gywm.html" style="margin:20px 10px">关于我们</a>
+				<a href="lxwm.html" style="margin:20px 10px">联系我们</a>
+				<a href="hzhb.html" style="margin:20px 10px">合作伙伴</a>
+				<a href="zyfz.html" style="margin:20px 10px">职业发展</a>
+				<a href="flsm.html" style="margin:20px 10px">法律声明</a>
+			</p>
+
+			<p class="info">
+				<span class="span_left">版权所有…………………………</span>
+				<span class="span_right"><strong>联系电话：</strong> 010 - 88888888</span>
+			</p>
+			
+			
+			
+			
+			
+
+		</div>
+
+		<script type="text/javascript" src="js/jquery.slicebox.js"></script>
+		<script type="text/javascript">
+		
+		 $(function(){
+            <!--调用Luara示例-->
+			$(".example2").css('display',"");
+            $(".example2").luara({width:"960",height:"540",interval:3000,selected:"seleted",deriction:"left"});
+
+        });
+
+		</script>
+	</body>
+</html>	

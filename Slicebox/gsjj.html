@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>禾贝（北京）投资基金管理有限责任公司</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Slicebox - 3D Image Slider with Fallback" />
+        <meta name="keywords" content="jquery, css3, 3d, webkit, fallback, slider, css3, 3d transforms, slices, rotate, box, automatic" />
+		<meta name="author" content="Pedro Botelho for Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		<div class="container">
+
+			
+
+<!--			<h1><img src="images/logo2.png" width="60" height="45" style="margin-right : 20px"></image>禾贝（北京）投资基金管理有限公司 <span>欢迎您的光临！</span></h1> -->
+			
+		<div class="top1">
+			<div id="logo" align="center">
+				<img src="images/logo3.png" style="max-height:48px">
+			</div>
+			<div id="menu" align="center">
+				<ul id="main" align="center">
+				<li><a href="index.html">主页</a></li>
+				<li>关于禾贝
+					<ul class="drop">
+						<div>
+							<li><a href="gsjj.html">公司简介</a></li>
+							<li><a href="hxjz.html">核心价值</a></li>
+							<li><a href="gsys.html">公司优势</a></li>
+						</div>
+					</ul>
+				</li>
+				<li>基金产品
+					<ul class="drop">
+						<div>
+							<li><a href="jj1.html">X1基金</a></li>
+							<li><a href="jj2.html">X2基金</a></li>
+						</div>
+					</ul>
+				</li>
+				<li>理财规划
+					<ul class="drop">
+						<div>
+							<li><a href="fxph.html">风险偏好分析</a></li>
+							<li><a href="tzjy.html">投资建议</a></li>
+						</div>
+					</ul>
+				</li>
+				<li>客户服务
+				</li>
+				<li>诚聘精英
+					<ul class="drop">
+						<div>
+							<li><a href="cpzw.html">诚聘职位</a></li>
+							<li><a href="zyfz.html">职业发展</a></li>
+						</div>
+					</ul>
+				</li>
+			<div id="marker"></div>
+			</ul>
+			</div>   
+		
+		
+		</div>
+		
+		<div style="height:536px;margin:0px auto;width:50%">
+			<div><img src="images/7.jpg"/ width="100%" height="300">
+			</div>
+			
+			<div>
+				<div style="float:left;margin-top:40px;margin-left:20px;">
+					<ul>关于禾贝
+						<li><a href="gsjj.html">公司简介</a></li>
+						<li><a href="hxjz.html">核心价值</a></li>
+						<li><a href="gsys.html">公司优势</a></li>
+					</ul>
+				</div>
+				
+				<div style="margin-top:20px;margin-left:130px;">
+					<h3>公司简介</h3>
+					<p>禾贝（北京）投资基金管理有限公司成立于…………………………禾贝（北京）投资基金管理有限公司成立于…………………………</p>
+					<p>禾贝（北京）投资基金管理有限公司成立于…………………………</p>
+					<p>禾贝（北京）投资基金管理有限公司成立于…………………………</p>
+					<p>禾贝（北京）投资基金管理有限公司成立于…………………………</p>
+					<p>禾贝（北京）投资基金管理有限公司成立于…………………………</p>
+					<p>禾贝（北京）投资基金管理有限公司成立于…………………………</p>
+					<p>禾贝（北京）投资基金管理有限公司成立于…………………………</p>
+					<p>禾贝（北京）投资基金管理有限公司成立于…………………………</p>
+				</div>
+			</div>				
+		</div>
+
+			
+			
+			<p align="center" class ="other">
+				<a href="gywm.html" style="margin:20px 10px">关于我们</a>
+				<a href="lxwm.html" style="margin:20px 10px">联系我们</a>
+				<a href="hzhb.html" style="margin:20px 10px">合作伙伴</a>
+				<a href="zyfz.html" style="margin:20px 10px">职业发展</a>
+				<a href="flsm.html" style="margin:20px 10px">法律声明</a>
+			</p>
+
+			<p class="info">
+				<span class="span_left">版权所有…………………………</span>
+				<span class="span_right"><strong>联系电话：</strong> 010 - 88888888</span>
+			</p>
+
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slicebox.js"></script>
+		<script type="text/javascript">
+		
+		var gyhb = document.getElementById("gyhb");
+		gyhb.onmouseover = gyhb1;
+		function gyhb1(){
+			gyhbc.style.display = "";
+		}
+		
+
+		
+			$(function() {
+
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ).hide(),
+						$navDots = $( '#nav-dots' ).hide(),
+						$nav = $navDots.children( 'span' ),
+						$shadow = $( '#shadow' ).hide(),
+						slicebox = $( '#sb-slider' ).slicebox( {
+							onReady : function() {
+
+								$navArrows.show();
+								$navDots.show();
+								$shadow.show();
+
+							},
+							onBeforeChange : function( pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+						
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':first' ).on( 'click', function() {
+
+								slicebox.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':last' ).on( 'click', function() {
+								
+								slicebox.previous();
+								return false;
+
+							} );
+
+							$nav.each( function( i ) {
+							
+								$( this ).on( 'click', function( event ) {
+									
+									var $dot = $( this );
+									
+									if( !slicebox.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+									
+									}
+									
+									slicebox.jump( i + 1 );
+									return false;
+								
+								} );
+								
+							} );
+
+						};
+
+						
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+			});
+
+		</script>
+	</body>
+</html>	
